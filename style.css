@@ -1,61 +1,29 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  overflow: hidden;
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-  margin-top: 150px;
-  z-index: 2;
-  position: relative;
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 button {
-  padding: 15px 30px;
-  font-size: 18px;
-  margin: 15px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Page backgrounds */
-.home {
-  background: url("https://i.imgur.com/8QZ7Z9G.jpg") center/cover;
+button:hover {
+    background-color: #005bb5;
 }
 
-.yes {
-  background: pink;
-}
-
-.no {
-  background: #ffcccc;
-}
-
-/* Floating hearts */
-.hearts::before {
-  content: "💖 💕 💗 💓 💞";
-  font-size: 40px;
-  position: absolute;
-  animation: float 6s linear infinite;
-}
-
-@keyframes float {
-  from { top: 100%; }
-  to { top: -10%; }
-}
-
-/* Angry birds */
-.birds::before {
-  content: "🐦 🐦 🐦 🐦 🐦";
-  font-size: 40px;
-  position: absolute;
-  animation: fly 4s linear infinite;
-}
-
-@keyframes fly {
-  from { left: -100px; }
-  to { left: 100%; }
-}
 
