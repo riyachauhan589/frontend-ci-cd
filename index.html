@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Love App 💖</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 
   <div class="container">
-    <h1 id="question">Do you love me? 💕</h1>
+    <h1>Do you love me? 💕</h1>
 
     <div class="buttons">
-      <button onclick="yesClick()">YES 😘</button>
-      <button onclick="noClick()">NO 😒</button>
+      <button onclick="chooseYes()">YES 😘</button>
+      <button onclick="chooseNo()">NO 😒</button>
     </div>
-
-    <h2 id="response"></h2>
   </div>
 
-  <div id="animation"></div>
+  <div class="hearts"></div>
 
   <script src="script.js"></script>
 </body>
