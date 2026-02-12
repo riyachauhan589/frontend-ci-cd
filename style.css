@@ -2,36 +2,60 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
-  transition: background 1s;
+  overflow: hidden;
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 150px;
+  z-index: 2;
+  position: relative;
 }
 
 button {
   padding: 15px 30px;
   font-size: 18px;
-  margin: 10px;
-  cursor: pointer;
+  margin: 15px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
-#response {
-  margin-top: 30px;
-  font-size: 28px;
+/* Page backgrounds */
+.home {
+  background: url("https://i.imgur.com/8QZ7Z9G.jpg") center/cover;
 }
 
-.cherry {
+.yes {
   background: pink;
 }
 
-.angry {
+.no {
   background: #ffcccc;
 }
 
-.heart {
+/* Floating hearts */
+.hearts::before {
+  content: "💖 💕 💗 💓 💞";
   font-size: 40px;
+  position: absolute;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from { top: 100%; }
+  to { top: -10%; }
+}
+
+/* Angry birds */
+.birds::before {
+  content: "🐦 🐦 🐦 🐦 🐦";
+  font-size: 40px;
+  position: absolute;
+  animation: fly 4s linear infinite;
+}
+
+@keyframes fly {
+  from { left: -100px; }
+  to { left: 100%; }
 }
 
