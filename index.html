@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Frontend CI/CD Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Love App 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Frontend CI/CD Pipeline</h1>
-        <p>This application is deployed automatically using AWS CI/CD.</p>
-        <button onclick="showMessage()">Click Me</button>
-        <p id="message"></p>
+  <div class="container">
+    <h1 id="question">Do you love me? 💕</h1>
+
+    <div class="buttons">
+      <button onclick="yesClick()">YES 😘</button>
+      <button onclick="noClick()">NO 😒</button>
     </div>
 
-    <script src="app.js"></script>
+    <h2 id="response"></h2>
+  </div>
+
+  <div id="animation"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
