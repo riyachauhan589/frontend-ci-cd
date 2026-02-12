@@ -1,25 +1,8 @@
-function yesClick() {
-  document.body.className = "cherry";
-  document.getElementById("response").innerHTML =
-    "I love you too ❤️😘💋";
-
-  startCherryBlossom();
+function chooseYes() {
+  window.location.href = "yes.html";
 }
 
-function noClick() {
-  document.body.className = "angry";
-  document.getElementById("response").innerHTML =
-    "Tum bhot kadus ho 😤🐦";
-
-  startAngryBirds();
+function chooseNo() {
+  window.location.href = "no.html";
 }
 
-function startCherryBlossom() {
-  document.getElementById("animation").innerHTML =
-    "🌸 🌸 🌸 🌸 🌸";
-}
-
-function startAngryBirds() {
-  document.getElementById("animation").innerHTML =
-    "🐦 🐦 🐦 🐦 🐦";
-}
